@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 import math
 
-GravitationConstant = 6.67300 / 100000000000
-Mass = 1.9891 * 1000000000000000000000000000000
-radius = 1.496 * 100000000000
-semimajorAxis = 1.496 * 100000000000
+GravitationConstant = 6.67300 / (10 ** 11)
+Mass = 1.9891 * (10 ** 30)
+radius = 1.496 * (10 ** 11)
+#semimajorAxis = 1.496 * 100000000000
+semimajorAxis = 1.496 * (10 ** 11)
 
 velocity = math.sqrt(GravitationConstant*Mass*((2/radius)-(1/semimajorAxis)))
 
